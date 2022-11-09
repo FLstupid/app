@@ -1,0 +1,79 @@
+<!--Signup component-->
+<div ng-app="myApp" ng-controller="myController" class="container">
+  <!--Signup form group declaration-->
+  <form name="signUpForm">
+    <div class="login-container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <!--First name label and field-->
+            <label>First name</label>
+            <input type="text" id="firstname" formControlName="firstname" class="form-control">
+            <div >
+              <div class="error">First name is required</div>
+            </div>
+          </div>
+        </div>
+        <!--Last name label and field-->
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Last name</label>
+            <input type="text" id="lastname" formControlName="lastname" class="form-control">
+            <div >
+              <div class="error">Last name is required</div>
+            </div>
+          </div>
+        </div>
+        <!--Email label and field-->
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email" formControlName="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                >
+            <div>
+              <div class="error">Email is required</div>
+            </div>
+          </div>
+        </div>
+        <!--Phone number label and field-->
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Phone number</label>
+            <input type="phoneNo" id="phoneNo" formControlName="phoneNo" class="form-control" pattern="\d*" name="" maxlength="10" minlength="10"
+                 >
+            <div >
+              <div class="error">Username is required</div>
+            </div>
+          </div>
+        </div>
+        <!--Username label and field-->
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Username</label>
+            <input type="email" minlength="4" id="username" formControlName="username" class="form-control" >
+            <div>
+              <div class="error">Username is required</div>
+            </div>
+          </div>
+        </div>
+        <!--Password label and field-->
+        <div class="col-md-12">
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" formControlName="password" class="form-control">
+            <div>
+              <div  class="error">Password is required</div>
+            </div>
+          </div>
+        </div>
+        <!--Sign up button-->
+        <div class="col-md-12">
+          <div class="form-group">
+            <button class="btn btn-success signup">SignUp</button>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

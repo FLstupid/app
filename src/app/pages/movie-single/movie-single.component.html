@@ -55,14 +55,14 @@
       </div>
 
       <!-- display Showtime -->
-      <div *ngFor="let c of result" class="main">
+      <div class="main">
         <div class="location">
-          {{c.name}}
+          c.name
         </div>
 
-         <div class="time" *ngFor="let ca of c.values;">
-          <button type="button" value="{{ca._id}}" 
-            class="btn1 btn-outline-danger">{{ca.showTime}}</button>
+         <div class="time">
+          <button type="button" value="ca._id" 
+            class="btn1 btn-outline-danger">ca.showTime</button>
         </div> 
       </div>
 
@@ -80,11 +80,11 @@
         </tr>
         </thead>
         <tbody>
-          <tr class="reviewTable" *ngFor="let part of list">
+          <tr class="reviewTable">
             <!-- <td>{{parentData}}</td> -->
-            <td>{{part.mname}}</td>
-            <td >{{part.desc}}</td>
-            <td>{{part.date}}</td>
+            <td>part.mname</td>
+            <td >part.desc</td>
+            <td>part.date</td>
           </tr>
         </tbody>
         </table>

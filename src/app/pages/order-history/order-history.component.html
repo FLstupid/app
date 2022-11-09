@@ -15,10 +15,10 @@
   </thead>
   <tbody>
 <!-- Fecthing order history data for the user-->
-    <tr  *ngFor ="let c of list | paginate: { itemsPerPage:6, currentPage: p }"> 
+    <tr> 
        <td> # </td>
-        <td>{{c._id}}</td>
-        <td>{{c.creationtime}}</td> 
+        <td>c._id</td>
+        <td>c.creationtime</td> 
       <td><button class="viewBtn">
       View</button></td>
       </tr>

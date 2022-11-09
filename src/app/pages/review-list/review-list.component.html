@@ -9,10 +9,16 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="reviewTable" *ngFor="let part of list">
-      <td>{{part.mname}}</td>
-      <td>{{part.desc}}</td>
-      <td>{{part.date}}</td>
+    <tr class="reviewTable">
+      <td>part.mname</td>
+      <td>part.desc</td>
+      <td>part.date</td>
+      <td><button class="trash"><i class="fa fa-trash-o"></i></button></td>
+    </tr>
+    <tr class="reviewTable">
+      <td>Captain America</td>
+      <td>part.desc</td>
+      <td>25-11-2022</td>
       <td><button class="trash"><i class="fa fa-trash-o"></i></button></td>
     </tr>
   </tbody>
