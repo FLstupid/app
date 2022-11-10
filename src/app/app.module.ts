@@ -1,6 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// Modules
+import {
+  NgbModule,
+  NgbPaginationModule,
+  NgbAlertModule,
+} from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+// Pages
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -20,6 +30,14 @@ import { SeatSelectionComponent } from './pages/seat-selection/seat-selection.co
 import { SignupComponent } from './pages/signup/signup.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 
+// Services
+//* Auth
+import { LoginService } from './services/auth/login.service';
+import { SignUpService } from './services/auth/sign-up.service';
+import { ForgotPasswordService } from './services/auth/forgot-password.service';
+
+//* Movie
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,13 +56,19 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
     FilterPipe,
     ResetPasswordComponent,
     UserProfileComponent,
-    ReviewListComponent
+    ReviewListComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    NgbModule,
+    HttpClientModule,
+    FormsModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    NgbPaginationModule,
+    NgbAlertModule, 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [SignUpService, ForgotPasswordService, LoginService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -19,79 +19,74 @@ const routes: Routes = [
   {
     path: 'movie-single/:movieId',
     component: MovieSingleComponent,
-    data: { title: 'Dashboard' }
+    data: { title: 'Dashboard' },
   },
   {
     path: 'seatselection',
     component: SeatSelectionComponent,
-    data: { title: 'Dashboard' }
+    data: { title: 'Dashboard' },
   },
   {
-
     path: 'shows',
     component: MovieShowSelectComponent,
-    data: { title: 'Dashboard' }
+    data: { title: 'Dashboard' },
   },
-  { 
-
+  {
     path: 'dashboard',
     component: MiddleDivComponent,
-    data: { title: 'Dashboard' }
+    data: { title: 'Dashboard' },
   },
   {
     path: 'payment',
     component: PaymentComponent,
-    data: { title: 'Payment Form' }
+    data: { title: 'Payment Form' },
   },
   {
     path: 'login',
     component: LoginComponent,
-    data: { title: 'Login ' }
+    data: { title: 'Login ' },
   },
   {
     path: 'signup',
     component: SignupComponent,
-    data: { title: 'Sign up' }
+    data: { title: 'Sign up' },
   },
   {
     path: 'forgotpassword',
     component: ForgotpasswordComponent,
-    data: { title: 'Forgot password' }
+    data: { title: 'Forgot password' },
   },
   {
     path: 'resetpassword/:token',
     component: ResetPasswordComponent,
-    data: { title: 'Reset password' }
+    data: { title: 'Reset password' },
   },
   {
     path: 'customerreview',
     component: CustomerReviewTemplateComponent,
-    data: { title: 'Forgot password' }
+    data: { title: 'Forgot password' },
   },
-  { path: '',
-    redirectTo: '/dashboard',
-    pathMatch: 'full'
-  },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   {
     path: 'orderhistory',
     component: OrderHistoryComponent,
-    data: { title: 'Order History ' }
-  } ,
+    data: { title: 'Order History ' },
+  },
   {
     path: 'user-profile',
     component: UserProfileComponent,
-    data: { title: 'User Profile' }
-  } ,
+    data: { title: 'User Profile' },
+  },
   {
     path: 'user-review-list',
     component: ReviewListComponent,
-    data: { title: 'User Review List' }
-  } ,
-   { path: '**', component: PageNotFoundComponent }
+    data: { title: 'User Review List' },
+  },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
