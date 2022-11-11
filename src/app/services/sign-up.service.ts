@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from './../../../environments/environment';
+import { environment } from './../../environments/environment';
 import { Observable } from 'rxjs';
-import { SignupRequest } from '../../models/signup-request';
-import { User } from '../../models/user';
-
+import {SignupRequest} from '../Models/signup-request';
+import {User} from '../Models/user';
 @Injectable()
-export class SignUpService {
+export class SignUpService{
   signUpUrl: string;
   signUpResourceURL: string;
 
