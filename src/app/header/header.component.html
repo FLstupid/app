@@ -13,6 +13,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+        <li><a [routerLink]="['/dashboard']">
+          Home
+        </a></li>
         <!-- <li><a [routerLink]="['/user-profile']" *ngIf="!this.dataservice.getIsSignup()"> -->
         <li><a [routerLink]="['/user-profile']">
             Profile
@@ -25,12 +28,15 @@
         <li><a [routerLink]="['/user-review-list']">
             User Reviews
           </a></li>
+          <li><a [routerLink]="['/admin-page']">
+            Admin
+          </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <!-- <li><a [routerLink]="['/login']">{{this.dataservice.getisDisplayname()}}</a></li> -->
         <li><a [routerLink]="['/login']"></a></li>
         <!-- <li><a *ngIf="this.dataservice.getIsSignup()" [routerLink]="['/signup']"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li> -->
-        <li><a [routerLink]="['/signup']"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+        <li><a [routerLink]="['/login']"><span class="glyphicon glyphicon-log-in"></span>Log In</a></li>
         <li><a href="#">
             <nav role='navigation'>
               <div id="menuToggle">

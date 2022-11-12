@@ -29,12 +29,13 @@ import { ReviewListComponent } from './pages/review-list/review-list.component';
 import { SeatSelectionComponent } from './pages/seat-selection/seat-selection.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+import { AdminPageAdminPage } from './pages/admin-page/admin-page.admin-page';
 
 // Services
 //* Auth
-import { LoginService } from './services/auth/login.service';
-import { SignUpService } from './services/auth/sign-up.service';
-import { ForgotPasswordService } from './services/auth/forgot-password.service';
+// import { LoginService } from './services/auth/login.service';
+// import { SignUpService } from './services/auth/sign-up.service';
+// import { ForgotPasswordService } from './services/auth/forgot-password.service';
 
 //* Movie
 
@@ -56,7 +57,8 @@ import { ForgotPasswordService } from './services/auth/forgot-password.service';
     FilterPipe,
     ResetPasswordComponent,
     UserProfileComponent,
-    ReviewListComponent,
+    ReviewListComponent, 
+    AdminPageAdminPage
   ],
   imports: [
     BrowserModule,
@@ -66,9 +68,10 @@ import { ForgotPasswordService } from './services/auth/forgot-password.service';
     AppRoutingModule,
     ReactiveFormsModule,
     NgbPaginationModule,
-    NgbAlertModule, 
+    NgbAlertModule
   ],
-  providers: [SignUpService, ForgotPasswordService, LoginService],
+  providers: [],
+  // providers: [SignUpService, ForgotPasswordService, LoginService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

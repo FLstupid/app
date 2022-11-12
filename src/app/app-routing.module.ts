@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminPageAdminPage } from './pages/admin-page/admin-page.admin-page';
 import { CustomerReviewTemplateComponent } from './pages/customer-review-template/customer-review-template.component';
 import { ForgotpasswordComponent } from './pages/forgotpassword/forgotpassword.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -81,6 +82,11 @@ const routes: Routes = [
     path: 'user-review-list',
     component: ReviewListComponent,
     data: { title: 'User Review List' },
+  },
+  {
+    path: 'admin-page',
+    component: AdminPageAdminPage,
+    data: { title: 'Admin menu' },
   },
   { path: '**', component: PageNotFoundComponent },
 ];
