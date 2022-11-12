@@ -88,7 +88,16 @@ button.calendar:active {
 }
 
 .date-picker {
-  width: 100px;
+  width: 150px;
+  margin: auto;
+  padding: 10px;
+  .input-group-append{
+    text-align: center;
+  }
+  .form-control{
+    margin-bottom: 5px;
+    text-align: center;
+  }
 }
 
 .content-table {
@@ -128,11 +137,18 @@ button.calendar:active {
   border-bottom: 2px solid rgb(220, 53, 69);
 }
 
-
+.flex{
+  display: flex;
+  
+}
+.col-sm-10{
+  margin-top: 50px;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 500px;
- // margin: auto;
+  width: 500px;
+  margin: auto;
   text-align: center;
   font-family: arial;
   
