@@ -6,7 +6,6 @@ export class movie {
   trailer: String;
   releases: String;
   genres: String;
-
   constructor(
     name: String,
     duration: String,

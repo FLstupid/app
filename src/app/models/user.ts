@@ -1,17 +1,24 @@
-/*User model*/
+/*User request model*/
 export class User {
-  _id: string;
-  firstname: string;
-  lastname: string;
-  phoneNo: string;
-  email: string;
-  access_token: string;
-  username: string;
-
-}
-
-/*Login request model*/
-export class loginRequest {
-  password: string;
-  username: string;
+  firstName: String;
+  lastName: String;
+  phoneNumber: String;
+  email: String;
+  password: String;
+  gender: String;
+  constructor(
+    firstName: String,
+    lastName: String,
+    phoneNumber: String,
+    email: String,
+    password: String,
+    gender: String
+  ) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.phoneNumber = phoneNumber;
+    this.email = email;
+    this.password = password;
+    this.gender = gender;
+  }
 }
