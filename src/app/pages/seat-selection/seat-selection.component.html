@@ -468,10 +468,9 @@
                 <div class="screen">
                     <h2 class="wthree">Screen this way</h2>
                 </div>
-                <button (click)="confirmandpay()">Confirm & Pay</button>
             </div>
            
-            <div class="displayerBoxes txt-center">
+            <div class="flex txt-center">
                 <table class="Displaytable w3ls-table" width="100%">
                     <tr>
                         <th>Name</th>
@@ -480,16 +479,17 @@
                     </tr>
                     <tr>
                         <td>
-                            <textarea id="nameDisplay" *ngModel="model.name" ></textarea>
+                            <textarea id="nameDisplay" *ngModel="model.name"></textarea>
                         </td>
                         <td>
-                            <textarea id="NumberDisplay" *ngModel="model.Numseats"></textarea>
+                            <textarea id="NumberDisplay" *ngModel="model.Numseats">2</textarea>
                         </td>
                         <td>
-                            <textarea id="seatsDisplay" *ngModel="model.seats"></textarea>
+                            <textarea id="seatsDisplay" *ngModel="model.seats">A3,A4</textarea>
                         </td>
                     </tr>
                 </table>
+                <button (click)="confirmandpay()">Confirm & Pay</button>
             </div>
         </div>
       

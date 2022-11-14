@@ -1,10 +1,9 @@
 <script type="textr/javascript" src="jspdf.min.js"></script>
 <script type="text/javascript" src="html2canvas.js"></script>
 <script type="text/javascript"></script>
+<h1 class="text-center">Payment</h1>
 <div class="mainc">
-
     <div class="mainc_b">
-
         <div class="container-fluid py-3 bg-dark card ">
             <div class="row">
                 <div class="col-md-8 mx-auto">
@@ -60,7 +59,7 @@
                                             <div class="col-md-3">
                                                  <!-- first set of card number  is required, has to be minimum length 4 and 
                                                 must be numeric -->
-                                                <input type="text" class="form-control" minlength="4" maxlength="4"
+                                                <input type="text" class="form-control card-input"
                                                     pattern="[0-9]*" title="First four digits" required="" >
 
                                                 <div class="alert alert-danger" *ngIf="ccnum1.touched && !ccnum1.valid"> 
@@ -135,37 +134,29 @@
                                                     <div *ngIf="ccnum4.errors.pattern">
                                                         Only digits.
                                                     </div>
-
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 <div class="row">
-
-
                                     <div class="col-4">
                                         <div class="form-group">
                                             <label for="cc-exp" class="control-label mb-1">Expiration</label>
-
-
-
-                                            <select class="form-control" name="cc_exp_mo">
-                                                <option value="01">January</option>
-                                                <option value="02">February</option>
-                                                <option value="03">March</option>
-                                                <option value="04">April</option>
-                                                <option value="05">May</option>
-                                                <option value="06">June</option>
-                                                <option value="07">July</option>
-                                                <option value="08">August</option>
-                                                <option value="09">September</option>
-                                                <option value="10">October</option>
-                                                <option value="11">November</option>
-                                                <option value="12">December</option>
-                                            </select>
+                                                <select class="form-control" name="cc_exp_mo">
+                                                    <option value="01">January</option>
+                                                    <option value="02">February</option>
+                                                    <option value="03">March</option>
+                                                    <option value="04">April</option>
+                                                    <option value="05">May</option>
+                                                    <option value="06">June</option>
+                                                    <option value="07">July</option>
+                                                    <option value="08">August</option>
+                                                    <option value="09">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                </select>
                                             <span class="invalid-feedback">Enter the expiration date</span>
                                         </div>
                                     </div>
@@ -189,8 +180,6 @@
                                             <span class="invalid-feedback">Enter the expiration date</span>
                                         </div>
                                     </div>
-
-
                                     <div class="col-4">
                                         <label for="x_card_code" class="control-label mb-1">Security code</label>
                                         <div class="input-group">
@@ -215,15 +204,14 @@
 
                                         </div>
                                     </div>
-
-
                                 </div>
-
                                 <div>
-                                <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
-                                    <i class="fa fa-lock fa-lg"></i>&nbsp;
-                                    <span id="payment-button-amount" >Pay $totalam.00</span>
-                                </button>
+                                <div class="btn">
+                                    <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
+                                        <i class="fa fa-lock fa-lg"></i>&nbsp;
+                                        <span id="payment-button-amount" >Pay $totalam.00</span>
+                                    </button>
+                                </div>
                             </div>
                             </form>                           
                         </div>
@@ -237,7 +225,6 @@
 
     <!-- Order Summary Side Panel -->
     <div class="mainc_c">
-      
         <div class="col-md-12 order-md-2 mb-4" id="col-md-12">
             <h4 class="d-flex justify-content-between align-items-center mb-3">
                 <span class="text-muted">Movie Booking Summary</span>

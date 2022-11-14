@@ -8,7 +8,6 @@ applet,
 object,
 iframe,
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -88,6 +87,17 @@ video {
     vertical-align: baseline;
 }
 
+h2{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-style: italic;
+    color: wheat;
+}
+
 article,
 aside,
 details,
@@ -158,6 +168,7 @@ a {
 
 .txt-center {
     text-align: center;
+    margin-left: 10px;
 }
 
 /* text align center */
@@ -222,7 +233,7 @@ img {
 
 /*--end reset--*/
 
-button.w3l-cart {
+button {
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -230,6 +241,7 @@ button.w3l-cart {
     -ms-transition: 0.5s all;
     text-decoration: $none;
     outline: $none;
+    margin-top: 20px;
 }
 
 body a:hover {
@@ -244,7 +256,7 @@ body a:hover {
 
 .body {
     background: url(../../assets/Images/banner.jpg) no-repeat center;
-    background-size: cover;
+    background-size: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -259,8 +271,8 @@ body a:hover {
 }
 
 .w3ls-reg {
-    width: 700px;
-    margin: 0 5vw;
+    width: 1000px;
+    margin: 0 auto;
     background: rgba(128, 128, 128, 0.34);
     padding: 3.5vw;
     box-sizing: border-box;
@@ -283,6 +295,7 @@ body a:hover {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
+    margin: auto;
 }
 
 h1 {
@@ -293,8 +306,8 @@ h1 {
     text-shadow: 4px 3px 1px rgba(0, 0, 0, 0.22);
     letter-spacing: 2px;
     text-align: center;
-    margin: 0.8em 1vw .9em;
     font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -365,7 +378,10 @@ button {
 }
 
 ul.seat_w3ls {
-    margin: 2em 0;
+    display: flex;
+    margin-top: 10px;
+    margin-right : 250px;
+    margin-bottom: 10px;
 }
 
 .screen {
@@ -497,6 +513,7 @@ input[type=checkbox]:checked:before {
 }
 
 .displayerBoxes {
+    display: flex;
     margin-top: 2em;
 }
 
@@ -593,7 +610,9 @@ input[type=checkbox]:checked:before {
 
 @media(max-width:320px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .w3ls-reg {
        width: 280px;
@@ -608,6 +627,13 @@ input[type=checkbox]:checked:before {
     .copy-wthree p {
         padding: 0 0.5em;
     }
+}
+.flex{
+    margin-left: 30px;
+    width: fit-content;
+}
+.w3ls-table{
+    width: 250px;
 }
 
 /*--//responsive--*/
