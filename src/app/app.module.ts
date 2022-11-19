@@ -13,8 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // Pages
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { HeaderComponent } from './layouts/header/header.component';
 import { CustomerReviewTemplateComponent } from './pages/customer-review-template/customer-review-template.component';
 import { ForgotpasswordComponent } from './pages/forgotpassword/forgotpassword.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -57,8 +57,8 @@ import { AdminPageAdminPage } from './pages/admin-page/admin-page.admin-page';
     FilterPipe,
     ResetPasswordComponent,
     UserProfileComponent,
-    ReviewListComponent, 
-    AdminPageAdminPage
+    ReviewListComponent,
+    AdminPageAdminPage,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +68,7 @@ import { AdminPageAdminPage } from './pages/admin-page/admin-page.admin-page';
     AppRoutingModule,
     ReactiveFormsModule,
     NgbPaginationModule,
-    NgbAlertModule
+    NgbAlertModule,
   ],
   providers: [],
   // providers: [SignUpService, ForgotPasswordService, LoginService],
