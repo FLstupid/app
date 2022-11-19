@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from './../../environments/environment';
 import { Observable } from 'rxjs';
-import {loginRequest, User} from "../Models/user";
+import { loginRequest, User } from '../models/User';
 @Injectable()
-export class LoginService{
+export class LoginService {
   loginUrl: string;
   loginResourceURL: string;
 

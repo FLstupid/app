@@ -2,19 +2,18 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from './../../environments/environment';
 import { Observable } from 'rxjs';
-import {SignupRequest} from '../Models/signup-request';
-import {User} from '../Models/user';
-import {order} from "../Models/order";
-import {UserProfileRequest} from "../Models/user-profile-request";
-import { HttpHeaders} from '@angular/common/http';
+import { SignupRequest } from '../Models/signup-request';
+import { User } from '../models/User';
+import { order } from '../models/Order';
+import { UserProfileRequest } from '../Models/user-profile-request';
+import { HttpHeaders } from '@angular/common/http';
 @Injectable()
-export class UserProfileService{
+export class UserProfileService {
   userProfileUrl: string;
   userProfileResourceURL: string;
   idURL: string;
   updateProfileUrl: string;
   updateUserProfileResourceURL: string;
-
 
   /**
    * Constructor.
@@ -44,12 +43,18 @@ export class UserProfileService{
    * @return {Observable<User>} {Observable for saved user object}
    */
 
-  updateUserDetails(userProfileRequest: UserProfileRequest, token: string): Observable<User> {
-    let httpHeaders = new HttpHeaders()
-      .set('Authorization', 'Bearer '+ token);
+  updateUserDetails(
+    userProfileRequest: UserProfileRequest,
+    token: string
+  ): Observable<User> {
+    let httpHeaders = new HttpHeaders().set('Authorization', 'Bearer ' + token);
     console.log(httpHeaders);
-    return this.http.put<User>(this.updateUserProfileResourceURL, userProfileRequest,{
-      headers: httpHeaders
-    });
+    return this.http.put<User>(
+      this.updateUserProfileResourceURL,
+      userProfileRequest,
+      {
+        headers: httpHeaders,
+      }
+    );
   }
 }
