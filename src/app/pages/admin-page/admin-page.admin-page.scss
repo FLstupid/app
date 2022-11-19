@@ -1,38 +1,36 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Montserrat:wght@300&family=Mukta:wght@200&family=Nunito:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@100&family=Titillium+Web:wght@300&display=swap');
-body{
-    background-color : #FCE2DB;
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Montserrat:wght@300&family=Mukta:wght@200&family=Nunito:wght@300&family=Open+Sans:wght@300&family=Roboto:wght@100&family=Titillium+Web:wght@300&display=swap");
+body {
+  background-color: #fce2db;
 }
-.container-button{
-    display : flex;
-    margin-top: 50px;
-    align-items: center;
-    justify-content: center;
+.container-button {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
 }
-.container-button .button-admin{
-    padding : 0 40px;
+.container-button .button-admin {
+  padding: 0 40px;
 }
-.container-button .button-admin button{
-    text-decoration : none;
-    background-color: white;
-    width : 200px;
-    height : 200px;
-    text-align: center;
-    border-radius: 10px;
-
+.container-button .button-admin button {
+  text-decoration: none;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 10px;
 }
-.container-button .button-admin button img{
-    width : 120px;
-    height : 120px;
+.container-button .button-admin button img {
+  width: 120px;
+  height: 120px;
 }
-.container-button .button-admin button img:hover{
-    transform: scale(1.4);
+.container-button .button-admin button img:hover {
+  transform: scale(1.4);
 }
-.container-button .button-admin p{
-    text-align: center;
-    font-size : 30px;
+.container-button .button-admin p {
+  text-align: center;
+  font-size: 30px;
 }
-.welcome{
-    margin-top: -50px;
-    text-align: center  ;
+.welcome {
+  margin-top: -50px;
+  text-align: center;
 }

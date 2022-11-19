@@ -1,21 +1,21 @@
-@import "./../../scss/variable.scss";
+@import "../../scss/variable";
+
 /*The whole page container*/
-.login-container{
+.login-container {
   max-width: 400px;
   margin: 60px auto 0;
 }
 
 /*The sign up container*/
-.signup{
+.signup {
   color: white;
   background-color: $button-background-colors;
   width: 100%;
   margin-top: 10px;
 }
 
-.error{
+.error {
   color: tomato;
   font-size: 12px;
-  padding-top: 4px
+  padding-top: 4px;
 }
-

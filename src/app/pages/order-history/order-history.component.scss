@@ -1,70 +1,64 @@
-@import "./../../scss/variable";
+@import "../../scss/variable";
 
-.viewBtn{
-    color: black;
+.viewBtn {
+  color: black;
 }
 .mainc {
-display:grid;
-grid-template-columns: 30% auto 30%;
-background-color:#232323;
-grid-auto-rows: minmax(80px, auto);
-grid-gap: 8px;
+  display: grid;
+  grid-template-columns: 30% auto 30%;
+  background-color: #232323;
+  grid-auto-rows: minmax(80px, auto);
+  grid-gap: 8px;
 }
 
-    .mainc_b
-    {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    height : 550px; 
-    background-color: #872341;
-    border-radius: 20px;
-    th{
-        font-size: 17px;
-    }
-    }
-    
-    .mainc_c
-    {
-    grid-column: 3 / 4;
-    grid-row: 1/ 3;
-    background-color: #EAEAEA;
-    border-radius: 20px;
-    width: 450px;
-    table{
-        display: flex;
-        margin: 0px auto;
-        width: fit-content;
-        margin-top: 40px;
-    }
-    td{
-        padding: 20px;
+.mainc_b {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  height: 550px;
+  background-color: #872341;
+  border-radius: 20px;
+  th {
+    font-size: 17px;
+  }
+}
 
-    }
-    td:first-child{
-        color : #624F82;
-        font-size: 15px;
-        width: 150px;
-    }
-    td:nth-child(2){
-        color : red;
-        font-size: 15px;
-        width: 200px;
-    }
-    }
-// accessing inheritence concepts 
+.mainc_c {
+  grid-column: 3 / 4;
+  grid-row: 1/ 3;
+  background-color: #eaeaea;
+  border-radius: 20px;
+  width: 450px;
+  table {
+    display: flex;
+    margin: 0px auto;
+    width: fit-content;
+    margin-top: 40px;
+  }
+  td {
+    padding: 20px;
+  }
+  td:first-child {
+    color: #624f82;
+    font-size: 15px;
+    width: 150px;
+  }
+  td:nth-child(2) {
+    color: red;
+    font-size: 15px;
+    width: 200px;
+  }
+}
+// accessing inheritence concepts
 h1 {
-   @extend %font-shared;
-   color: whitesmoke;
-    margin-top: 20px;
-    font-size: 40px;
-   }
-   
-   h3 {
-    @extend %font-shared;
-    color: #872341;
-     margin-top: 40px;
-     font-size: 40px;
-    }
-    
- 
-   
+  @extend %font-shared;
+  color: whitesmoke;
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+h3 {
+  @extend %font-shared;
+  color: #872341;
+  margin-top: 40px;
+  font-size: 40px;
+}

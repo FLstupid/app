@@ -1,14 +1,16 @@
-@import "./../../scss/variable";
+@import "../../scss/variable";
 
 .video {
   width: 800px;
   height: 450px;
 }
-.maindiv,.middlepart {
+.maindiv,
+.middlepart {
   margin: $margin-padding;
   padding: $margin-padding;
 }
-.maindiv,.main{
+.maindiv,
+.main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .reviewTable {
@@ -60,7 +62,7 @@
   ul,
   li {
     margin: 10px;
-    list-style: $none; 
+    list-style: $none;
   }
 }
 .movie-meta li,
@@ -80,7 +82,6 @@ button.calendar:active {
   background-size: 18px;
   background-position: center;
   padding-left: 10px;
-  
 }
 
 .ngb-dp-arrow-btn {
@@ -91,10 +92,10 @@ button.calendar:active {
   width: 150px;
   margin: auto;
   padding: 10px;
-  .input-group-append{
+  .input-group-append {
     text-align: center;
   }
-  .form-control{
+  .form-control {
     margin-bottom: 5px;
     text-align: center;
   }
@@ -112,7 +113,7 @@ button.calendar:active {
 }
 
 .content-table thead tr {
-  background-color:rgb(220, 53, 69);
+  background-color: rgb(220, 53, 69);
   color: #ffffff;
   text-align: left;
   font-weight: bold;
@@ -137,11 +138,10 @@ button.calendar:active {
   border-bottom: 2px solid rgb(220, 53, 69);
 }
 
-.flex{
+.flex {
   display: flex;
-  
 }
-.col-sm-10{
+.col-sm-10 {
   margin-top: 50px;
 }
 .card {
@@ -151,7 +151,6 @@ button.calendar:active {
   margin: auto;
   text-align: center;
   font-family: arial;
-  
 }
 
 .title {
@@ -159,7 +158,6 @@ button.calendar:active {
   font-size: 18px;
   margin-top: 10px;
 }
-.button
-{
+.button {
   margin: $margin-padding;
 }

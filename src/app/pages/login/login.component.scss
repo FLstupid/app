@@ -1,16 +1,17 @@
-@import "./../../scss/variable.scss";
+@import "../../scss/variable";
+
 /*The whole login page container*/
-.login-container{
+.login-container {
   max-width: 400px;
   margin: 60px auto 0;
   border: 1px solid black;
-  border-radius:14px;
-  padding:60px;
+  border-radius: 14px;
+  padding: 60px;
   margin-bottom: 40px;
 }
 
 /*Login button styles*/
-.login{
+.login {
   color: white;
   background-color: $button-background-colors;
   width: 100%;
@@ -18,18 +19,17 @@
 }
 
 /*Error styles*/
-.error{
+.error {
   color: tomato;
   font-size: 12px;
   padding-top: 4px;
 }
 
 /*Link styles*/
-.forgotPass{
+.forgotPass {
   padding-left: 80px;
 }
 
-.signup{
+.signup {
   padding-left: 40px;
 }
-

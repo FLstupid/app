@@ -8,9 +8,8 @@ describe('ForgotpasswordComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ForgotpasswordComponent ]
-    })
-    .compileComponents();
+      declarations: [ForgotpasswordComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
