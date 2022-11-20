@@ -32,9 +32,6 @@ import { UserProfileComponent } from './pages/user-profile/user-profile.componen
 
 // Services
 //* Auth
-import { LoginService } from './services/auth/login.service';
-import { SignUpService } from './services/auth/sign-up.service';
-import { ForgotPasswordService } from './services/auth/forgot-password.service';
 
 //* Movie
 
@@ -68,7 +65,7 @@ import { ForgotPasswordService } from './services/auth/forgot-password.service';
     NgbPaginationModule,
     NgbAlertModule, 
   ],
-  providers: [SignUpService, ForgotPasswordService, LoginService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
