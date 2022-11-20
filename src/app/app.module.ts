@@ -9,6 +9,7 @@ import {
 } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CookieService } from "ngx-cookie-service";
 
 // Pages
 import { AppRoutingModule } from './app-routing.module';
@@ -33,11 +34,12 @@ import { AdminPageAdminPage } from './pages/admin-page/admin-page.admin-page';
 
 // Services
 //* Auth
-// import { LoginService } from './services/auth/login.service';
+import { LoginService } from './services/login.service';
 // import { SignUpService } from './services/auth/sign-up.service';
 // import { ForgotPasswordService } from './services/auth/forgot-password.service';
 
 //* Movie
+import { MovieService } from './services/movie.service';
 
 @NgModule({
   declarations: [
@@ -70,8 +72,7 @@ import { AdminPageAdminPage } from './pages/admin-page/admin-page.admin-page';
     NgbPaginationModule,
     NgbAlertModule,
   ],
-  providers: [],
-  // providers: [SignUpService, ForgotPasswordService, LoginService],
+  providers: [LoginService, MovieService, CookieService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

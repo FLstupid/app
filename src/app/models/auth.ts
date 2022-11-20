@@ -1,12 +1,7 @@
 /*Login request model*/
 export class loginRequest {
-  username: String;
-  password: String;
-
-  constructor(username: String, password: String) {
-    this.username = username;
-    this.password = password;
-  }
+  username?: String;
+  password?: String;
 }
 
 /*Sign up request model*/

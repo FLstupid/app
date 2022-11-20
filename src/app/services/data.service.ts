@@ -1,40 +1,31 @@
 import { Injectable } from '@angular/core';
-import { paymentUrl } from '../Models/paymentUrl';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DataService {
-  private pUrl: paymentUrl;
-  private userId: String;
+  private userId?: String;
   private IsSignup: boolean = true;
-  public isDisplayname: string = 'Login';
+  public isDisplayName: string = 'Login';
 
   constructor() {}
 
-  // setting property for userid
+  // setting property for userId
   setUserId(id: String) {
     this.userId = id;
   }
-  //get for userid
+  //get for userId
   getUserId() {
     return this.userId;
   }
-  //set property
-  setpUrl(pUrl: paymentUrl) {
-    this.pUrl = pUrl;
-  }
-  //get pUrl string
-  getpUrl() {
-    return this.pUrl;
-  }
+
   //set  display name in header
-  setisDisplayname(value: string) {
-    this.isDisplayname = value;
+  setIsDisplayName(value: string) {
+    this.isDisplayName = value;
   }
   //get  display name in header
-  getisDisplayname() {
-    return this.isDisplayname;
+  getIsDisplayName() {
+    return this.isDisplayName;
   }
   //set signup boolean
   setIsSignup(value: boolean) {

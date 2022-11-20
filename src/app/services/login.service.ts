@@ -2,7 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from './../../environments/environment';
 import { Observable } from 'rxjs';
-import { loginRequest, User } from '../models/User';
+import { User } from '../models/User';
+import { loginRequest } from '../models/Auth';
+
 @Injectable()
 export class LoginService {
   loginUrl: string;
@@ -12,8 +14,8 @@ export class LoginService {
    * Constructor.
    */
   constructor(private http: HttpClient) {
-    this.loginUrl = 'login';
-    this.loginResourceURL = `${environment.serverBaseURL}${this.loginUrl}`;
+    this.loginUrl = 'auth/login';
+    this.loginResourceURL = `${environment.apiBaseURL}${this.loginUrl}`;
   }
 
   /**

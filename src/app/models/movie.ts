@@ -12,3 +12,4 @@ export class Movie {
   isComing?: Boolean;
   isDisplay?: Boolean;
 }
+

@@ -1,56 +1,13 @@
 <div class="container text-center">
   <input type="text" class="searchTextBox" placeholder="Search By Movie Name...">
   <!-- list is the array of movies and filter is used to search by movie name -->
-  <div>
+  <div *ngFor="let l of list ">
     <div class="col-sm-4">
-      <span class="releaseDate">Release Date: l.movieReleaseDate</span>
-      <img src="../../assets/Images/movie1.jpg" class="img-responsive" alt="Image">
+      <span class="releaseDate">Release Date: {{l.releases}</span>
+      <img src={{l.image}} class="img-responsive" alt="Image">
       <span><i class="em em-heart"></i></span>
-      <span class="movieName"><a routerLink="/dashboard">l.movieName</a></span><br>
-      <span class="light-text">l.movieLength |</span>
-      <span class="light-text">l.language |</span>
-      <span class="light-text">l.movieType |</span>
-      <span class="light-text">l.rating}}</span>
-    </div>
-    <div class="col-sm-4">
-      <span class="releaseDate">Release Date: l.movieReleaseDate</span>
-      <img src="../../assets/Images/movie2.jpg" class="img-responsive" alt="Image">
-      <span><i class="em em-heart"></i></span>
-      <span class="movieName"><a routerLink="/dashboard">l.movieName</a></span><br>
-      <span class="light-text">l.movieLength |</span>
-      <span class="light-text">l.language |</span>
-      <span class="light-text">l.movieType |</span>
-      <span class="light-text">l.rating}}</span>
-    </div>
-    <div class="col-sm-4">
-      <span class="releaseDate">Release Date: l.movieReleaseDate</span>
-      <img src="../../assets/Images/movie3.jpg" class="img-responsive" alt="Image">
-      <span><i class="em em-heart"></i></span>
-      <span class="movieName"><a routerLink="/dashboard">l.movieName</a></span><br>
-      <span class="light-text">l.movieLength |</span>
-      <span class="light-text">l.language |</span>
-      <span class="light-text">l.movieType |</span>
-      <span class="light-text">l.rating}}</span>
-    </div>
-    <div class="col-sm-4">
-      <span class="releaseDate">Release Date: l.movieReleaseDate</span>
-      <img src="../../assets/Images/movie4.jpg" class="img-responsive" alt="Image">
-      <span><i class="em em-heart"></i></span>
-      <span class="movieName"><a routerLink="/dashboard">l.movieName</a></span><br>
-      <span class="light-text">l.movieLength |</span>
-      <span class="light-text">l.language |</span>
-      <span class="light-text">l.movieType |</span>
-      <span class="light-text">l.rating}}</span>
-    </div>
-    <div class="col-sm-4">
-      <span class="releaseDate">Release Date: l.movieReleaseDate</span>
-      <img src="../../assets/Images/movie5.jpg" class="img-responsive" alt="Image">
-      <span><i class="em em-heart"></i></span>
-      <span class="movieName"><a routerLink="/dashboard">l.movieName</a></span><br>
-      <span class="light-text">l.movieLength |</span>
-      <span class="light-text">l.language |</span>
-      <span class="light-text">l.movieType |</span>
-      <span class="light-text">l.rating}}</span>
+      <span class="movieName"><a>{{l.name}}</a></span><br>
+      <span class="light-text">{{l.duration}} | </span>
     </div>
   </div>
 </div>
