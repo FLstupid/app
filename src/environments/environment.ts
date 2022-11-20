@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   serverBaseURL: 'http://localhost:4200/',
-  apiBaseURL: 'https://cinema-4lpv.onrender.com/api/',
+  apiBaseURL: 'http://localhost:3000/api/',
 };
 
 /*

@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { loginRequest } from '../../models/Auth';
+import { loginRequest } from '../../models/auth';
 import { LoginService } from '../../services/login.service';
 import { DataService } from '../../services/data.service';
 import { CookieService } from 'ngx-cookie-service';
